@@ -6,7 +6,6 @@ import Main from "./Main";
 import ProjectList from "./ProjectList";
 import "./style.scss";
 import Intro from "./Intro";
-
 const App = () => {
   return (
     <div style={{ height: "100%" }}>

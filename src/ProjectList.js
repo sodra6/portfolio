@@ -1,5 +1,8 @@
 import React from "react";
 import Project from "./Project";
+import waternet from "./img/waternet.png";
+import wams from "./img/wams.png";
+import portfolio from "./img/portfolio.png";
 
 function ProjectList(props) {
   const projectList = [
@@ -11,6 +14,7 @@ function ProjectList(props) {
       frontEnd: "Javascript",
       backEnd: "Java, Spring",
       database: "Tibero",
+      img: waternet,
     },
     {
       projectId: 2,
@@ -20,6 +24,7 @@ function ProjectList(props) {
       frontEnd: "Javascript",
       backEnd: "Java, Spring-boot",
       database: "PostgreSQL",
+      img: wams,
     },
     {
       projectId: 3,
@@ -29,6 +34,7 @@ function ProjectList(props) {
       backEnd: "Java, Spring-boot",
       frontEnd: "React",
       database: "Oracle",
+      img: "",
     },
     {
       projectId: 4,
@@ -38,6 +44,7 @@ function ProjectList(props) {
       backEnd: "Node.js Node Express",
       frontEnd: "React",
       database: "PostgreSQL",
+      img: portfolio,
     },
     {
       projectId: 5,
@@ -47,6 +54,7 @@ function ProjectList(props) {
       backEnd: "java, Spring-boot",
       frontEnd: "React",
       database: "PostgreSQL",
+      img: "",
     },
   ];
   return (
