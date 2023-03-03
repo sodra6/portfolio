@@ -39,7 +39,7 @@ function ProjectList(props) {
     {
       projectId: 4,
       projectNm: "포트폴리오",
-      url: "test3",
+      url: "https://web-portfolio-r8xoo2mleme9svb.sel3.cloudtype.app",
       code: "https://github.com/sodra6/portfolio",
       backEnd: "Node.js Node Express",
       frontEnd: "React",
