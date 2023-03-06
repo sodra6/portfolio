@@ -9,6 +9,7 @@ function ProjectList(props) {
     axios
       .get("/projectList")
       .then(res => {
+        console.log(res.data);
         setProjectList(res.data);
       })
       .catch(err => console.log(err));
