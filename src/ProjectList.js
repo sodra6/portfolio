@@ -7,7 +7,7 @@ function ProjectList(props) {
 
   useEffect(() => {
     axios
-      .get("/getProjectList")
+      .get("/projectList")
       .then(res => {
         setProjectList(res.data);
       })
