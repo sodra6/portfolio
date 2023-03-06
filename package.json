@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.3.4",
     "bootstrap": "^5.2.3",
+    "http-proxy-middleware": "^2.0.6",
     "node-sass": "^8.0.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.2",
@@ -40,6 +41,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "proxy": "https://port-0-node-server-study-r8xoo2mleme9svb.sel3.cloudtype.app/"
+  }
 }
