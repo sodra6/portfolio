@@ -1,8 +1,9 @@
 @import "./variables.modules";
 body,
 html {
-  background: -webkit-linear-gradient(135deg, rgb(0, 255, 164), rgb(166, 104, 255));
-  height: 90vh;
+  background: -webkit-linear-gradient(135deg, rgb(27, 27, 27), rgb(166, 104, 255));
+  height: 100%;
+  width: 100%;
   margin: 0;
 }
 
@@ -15,9 +16,8 @@ nav {
 }
 
 .contents {
-  height: 85vh;
-  min-height: 300px;
-  padding: 8px;
+  height: 100%;
+  min-height: 800px;
   background-color: #ffffff;
   display: flex;
   justify-content: center;
@@ -26,7 +26,7 @@ nav {
 }
 
 .intro {
-  height: 85vh;
+  height: 80vh;
   min-height: 300px;
   padding: 9px;
   background-color: #ffffff;
@@ -72,7 +72,7 @@ nav {
   width: 600px;
 }
 .menuList {
-  height: 5vh;
+  margin-top: 0;
 }
 .menuList ul {
   height: 100%;
@@ -108,10 +108,11 @@ a:hover {
 
 .project {
   width: 50%;
+  margin-top: 20px;
   text-align: center;
 }
 
 .footer {
-  height: 4vh;
+  margin-bottom: 0;
   text-align: center;
 }
