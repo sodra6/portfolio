@@ -7,7 +7,7 @@ function ProjectList(props) {
 
   useEffect(() => {
     axios
-      .get("/api/projectList")
+      .get("https://port-0-node-server-study-r8xoo2mleme9svb.sel3.cloudtype.app/api/projectList")
       .then(res => {
         console.log(res.data);
         setProjectList(res.data);
