@@ -1,0 +1,53 @@
+@import "./variables.modules";
+
+.project {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+.comboBox {
+  margin: 0 auto;
+  background-color: $white;
+  height: 35px;
+  width: 20%;
+  border-radius: 20px;
+  line-height: 35px;
+  cursor: pointer;
+}
+.comboBox ul {
+  display: flex;
+  justify-content: center;
+}
+.comboBox li {
+  margin: 0 15px;
+}
+.comboBox li:hover {
+  color: $emphasize;
+  transition: 0.3s;
+}
+
+.imgBox {
+  width: 50%;
+  text-align: center;
+}
+
+.imgBox img {
+  width: 90%;
+}
+
+.projectInfo {
+  padding: 0 0 0 50px;
+  width: 40%;
+}
+
+.projectInfo a {
+  color: $emphasize;
+}
+
+.projectInfo div {
+  margin: 10px 0;
+}
+
+.prjctExplain {
+  border-bottom: 1px solid $lightgray;
+}

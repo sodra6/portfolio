@@ -1,0 +1,52 @@
+@import "./variables.modules";
+
+.skillBoxs {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.sklilBox {
+  margin: 0 50px;
+  width: 300px;
+}
+
+.sklilBox li {
+  margin: 5px 0;
+}
+
+.companyList {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.company {
+  width: 20%;
+  text-align: right;
+  justify-content: center;
+}
+
+.company img {
+  width: 200px;
+  height: 50px;
+}
+
+.explain {
+  width: 50%;
+  padding-left: 30px;
+  border-left: 1px solid $lightgray;
+}
+
+.comNm {
+  font: bold;
+}
+
+.comTenure {
+  font-size: 14px;
+  color: $lightgray;
+}
+
+.comIntro {
+  margin-top: 20px;
+  font-size: 14px;
+}

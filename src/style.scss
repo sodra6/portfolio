@@ -1,118 +1,69 @@
 @import "./variables.modules";
-body,
-html {
-  background: -webkit-linear-gradient(135deg, rgb(27, 27, 27), rgb(166, 104, 255));
-  height: 100%;
-  width: 100%;
+
+html,
+body {
   margin: 0;
+  height: 100%;
+  background-color: $subcolor;
+  font-family: "Bellefair", serif;
 }
 
-nav {
-  transition: $transition;
-}
-
-.active {
-  color: rgb(119, 216, 74);
+.sidebar {
+  position: fixed;
+  height: 100%;
+  top: 0;
+  width: 14%;
+  left: 0;
+  background-color: $dark;
+  color: $white;
+  text-align: center;
 }
 
 .contents {
+  position: relative;
+  width: 84%;
   height: 100%;
-  min-height: 800px;
-  background-color: #ffffff;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap; // 복수의 행
-  align-items: center;
+  top: 0;
+  margin: 20px;
+  left: 14%;
 }
 
-.intro {
-  height: 80vh;
-  min-height: 300px;
-  padding: 9px;
-  background-color: #ffffff;
-  justify-content: center;
-  flex-wrap: wrap; // 복수의 행
-  align-items: center;
+.subContents {
+  width: 80%;
+  background-color: $white;
+  margin: 50px auto;
+  padding: 20px 30px;
+  border-radius: 20px;
 }
-.intro > div {
-  width: 40vw;
-  margin: auto;
+.main {
+  position: relative;
+  width: 84%;
+  top: 0;
+  left: 14%;
+  opacity: 2;
 }
-
-.profileBox {
-  width: 300px;
-  height: 300px;
-  overflow: hidden;
-}
-
-.profileBox img {
-  width: 100%;
-  height: 100%;
-  border-radius: 70%;
-  background: #ffffff;
-  object-fit: cover;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  user-select: none;
+.mainTitle {
+  color: $white;
+  font-size: 50;
+  position: fixed;
+  top: 40%;
+  left: 30%;
+  border: 2px soild $white;
 }
 
-.introBox {
-  padding-left: 100px;
-  display: inline;
-  width: 30%;
-}
-.introBox li {
-  margin-bottom: 10px;
-  font-size: 20px;
-}
-.imgBox img {
-  height: 300px;
-  width: 600px;
-}
-.menuList {
-  margin-top: 0;
-}
-.menuList ul {
-  height: 100%;
-  justify-content: center;
-  display: flex;
-}
-.menuList li {
-  height: 100%;
-  width: 200px;
-  font-size: 25px;
-  align-items: center;
-  text-align: center;
-}
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-li {
-  transition: $transition;
-  &:hover {
-    transform: translateY(-3px);
-    transition: $transition;
-  }
-}
 a {
   text-decoration: none;
-  color: black;
 }
 
-a:hover {
-  color: unset;
-}
-
-.project {
-  width: 50%;
-  margin-top: 20px;
-  text-align: center;
-}
-
-.footer {
-  margin-bottom: 0;
-  text-align: center;
+.subTitle {
+  width: 100px;
+  text-decoration: underline;
+  text-decoration-color: $emphasize;
+  text-underline-offset: 15px;
 }

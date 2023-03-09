@@ -1,0 +1,65 @@
+@import "./variables.modules";
+
+.profileBox {
+  margin: 20px;
+}
+.profileBox img {
+  border-radius: 50%;
+}
+
+.socialLink ul li {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  display: inline-block;
+  background-color: #212431;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 35px;
+}
+
+.socialLink ul li a {
+  color: $white;
+}
+
+.socialLink ul li a:hover {
+  color: $emphasize;
+  transition: 0.5s;
+}
+
+.mnuList {
+  margin-top: 40px;
+  margin-left: 20px;
+}
+.mnuList li {
+  margin: 30px;
+  text-align: left;
+}
+
+.mnuList li a {
+  color: #424242;
+}
+
+.mnuList li a.active {
+  color: $white;
+}
+
+.mnuList li a .active {
+  color: #424242;
+}
+
+.mnuList li a:hover {
+  color: $white;
+  transition: 0.5s;
+}
+
+.footer {
+  width: 14%;
+  color: $white;
+  font-size: 14px;
+  position: fixed;
+  left: 0;
+  bottom: 10px;
+  z-index: 9999;
+  text-align: center;
+}
