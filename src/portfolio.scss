@@ -25,6 +25,11 @@
   color: $emphasize;
   transition: 0.3s;
 }
+.comboBox li.active {
+  color: $emphasize;
+  font-weight: 700;
+  transition: 0.3s;
+}
 
 .imgBox {
   width: 50%;

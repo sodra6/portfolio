@@ -1,34 +1,44 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Project from "./Project";
 import axios from "axios";
 import "../portfolio.scss";
 
 function ProjectList(props) {
   const [projectList, setProjectList] = useState([]);
-  const [language, setLanguage] = useState();
-
-  const onClickLang = e => {
-    setLanguage(e.target.value);
-    console.log(e);
+  const [active, setActive] = useState("");
+  const [language, setLanguage] = useState(",");
+  const onClickLang = value => {
+    setActive(value);
+    setLanguage(value);
   };
   useEffect(() => {
     axios
-      .get("https://port-0-node-server-study-r8xoo2mleme9svb.sel3.cloudtype.app/api/projectList")
+      .get(`http://localhost:3005/api/projectList`, { params: { language: language } })
       .then(res => {
-        console.log(res.data);
         setProjectList(res.data);
       })
       .catch(err => console.log(err));
-  }, []);
+  }, [language]);
+
   return (
     <div className="contents">
       <div className="comboBox">
         <ul>
-          <li onClick={onClickLang}>ALL</li>
-          <li onClick={onClickLang}>Java</li>
-          <li onClick={onClickLang}>Node</li>
-          <li onClick={onClickLang}>Jsp</li>
-          <li onClick={onClickLang}>React</li>
+          <li className={active === "," ? "active" : ""} onClick={() => onClickLang(",")}>
+            ALL
+          </li>
+          <li className={active === "java" ? "active" : ""} onClick={() => onClickLang("java")}>
+            Java
+          </li>
+          <li className={active === "node" ? "active" : ""} onClick={() => onClickLang("node")}>
+            Node
+          </li>
+          <li className={active === "jsp" ? "active" : ""} onClick={() => onClickLang("jsp")}>
+            Jsp
+          </li>
+          <li className={active === "react" ? "active" : ""} onClick={() => onClickLang("react")}>
+            React
+          </li>
         </ul>
       </div>
       {projectList.map(project => {

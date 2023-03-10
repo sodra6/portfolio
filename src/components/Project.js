@@ -29,7 +29,6 @@ function Project({ project }) {
   const closeModal = () => {
     setModalOpen(false);
   };
-  console.log(project.demo !== null);
   return (
     <div className="subContents">
       <h1>{project.prjct_nm}</h1>
